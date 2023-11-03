@@ -1,4 +1,4 @@
-# Introduction to kotlin language
+# Introduction to Kotlin language
 
 - Kotlin is modern, trending programming langauge
 - Kotlin is easy to learn, especially if you already know Java (it is 100% compatible with Java).
