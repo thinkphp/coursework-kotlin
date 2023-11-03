@@ -31,6 +31,11 @@ val cars = arrayOf("Volvo", "BMW", "Ford", "Mazda")
 for (x in cars) {
   println(x)
 }
+
+val cars2 = arrayOf("Volvo", "BMW", "Ford", "Mazda")
+for (x in cars2.reversed()) {
+  println(x)
+}
 ```
 
 ## Examples
