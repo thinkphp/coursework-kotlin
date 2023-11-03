@@ -24,6 +24,15 @@ println(cars[0])
 // Now outputs Opel instead of Volvo
 ```
 
+# Kotlin Loops
+
+```
+val cars = arrayOf("Volvo", "BMW", "Ford", "Mazda")
+for (x in cars) {
+  println(x)
+}
+```
+
 ## Examples
 
 * https://ideone.com/N0rFMp (Calculator - euclid, sqrt, PI)
