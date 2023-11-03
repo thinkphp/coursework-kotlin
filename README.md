@@ -15,6 +15,15 @@ val myBoolean: Boolean = true     // Boolean
 val myText: String = "Hello"      // String
 ```
 
+# Kotlin Arrays
+
+```
+val cars = arrayOf("Volvo", "BMW", "Ford", "Mazda")
+cars[0] = "Opel"
+println(cars[0])
+// Now outputs Opel instead of Volvo
+```
+
 ## Examples
 
 * https://ideone.com/N0rFMp (Calculator - euclid, sqrt, PI)
