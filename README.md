@@ -161,7 +161,19 @@ fun main(args: Array<String>) {
     student2.hobby("basketball")
 }
 ```
-creating a class -> https://ideone.com/2Q1tQd
+https://ideone.com/2Q1tQd
+
+# Kotlin Constructor class
+
+```
+class Car(var brand: String, var model: String, var year: Int)
+
+fun main() {
+  val c1 = Car("Ford", "Mustang", 1969)
+  val c2 = Car("BMW", "X5", 1999)
+  val c3 = Car("Tesla", "Model S", 2020)
+}
+```
 
 ## Examples:
 
