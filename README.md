@@ -161,6 +161,7 @@ fun main(args: Array<String>) {
     student2.hobby("basketball")
 }
 ```
+creating a class -> https://ideone.com/2Q1tQd
 
 ## Examples:
 
