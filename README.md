@@ -81,6 +81,30 @@ while (i < 10) {
 }
 ```
 
+# Kotlin Strings
+
+```
+
+var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+println("The length of the txt string is: " + txt.length)
+
+var txt = "Please locate where 'locate' occurs!"
+println(txt.indexOf("locate"))  // Outputs 7
+
+var txt1 = "Hello World"
+var txt2 = "Hello World"
+println(txt1.compareTo(txt2))  // Outputs 0 (they are equal)
+
+var firstName = "John"
+var lastName = "Doe"
+println(firstName + " " + lastName)
+
+//templates
+var firstName = "John"
+var lastName = "Doe"
+println("My name is $firstName $lastName")
+```
+
 ## Examples
 
 * https://ideone.com/N0rFMp (Calculator - euclid, sqrt, PI)
