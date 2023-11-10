@@ -105,9 +105,13 @@ var lastName = "Doe"
 println("My name is $firstName $lastName")
 ```
 
-## Examples
+## Examples:
 
 * https://ideone.com/N0rFMp (Calculator - euclid, sqrt, PI)
 * https://ideone.com/cuBoe1 (Bubble Sort in Action)
 * https://ideone.com/qAzN74 (Natural Logarithm)
+
+## References:
+
+https://www.w3schools.com/KOTLIN/index.php
   
