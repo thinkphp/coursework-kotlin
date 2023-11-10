@@ -81,7 +81,7 @@ while (i < 10) {
 }
 ```
 
-# Kotlin Strings
+# Strings
 
 ```
 
@@ -105,7 +105,7 @@ var lastName = "Doe"
 println("My name is $firstName $lastName")
 ```
 
-## Kotlin OOP
+## Object-Oriented Programming
 
 ```
 // Create a c1 object of the Car class
@@ -173,6 +173,28 @@ fun main() {
   val c2 = Car("BMW", "X5", 1999)
   val c3 = Car("Tesla", "Model S", 2020)
 }
+```
+
+# Inheritance OOP
+
+```
+// Superclass
+open class MyParentClass {
+  val x = 5
+}
+
+// Subclass
+class MyChildClass: MyParentClass() {
+  fun myFunction() {
+    println(x) // x is now inherited from the superclass
+  }
+}
+
+// Create an object of MyChildClass and call myFunction
+fun main() {
+  val myObj = MyChildClass()
+  myObj.myFunction()
+} 
 ```
 
 ## Examples:
