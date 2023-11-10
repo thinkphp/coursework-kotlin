@@ -134,6 +134,34 @@ println(c1.brand)  // Ford
 println(c2.brand)  // BMW
 ```
 
+```
+import java.util.*
+
+class Student(var name: String, var surname: String, var year: Int) {
+  // Class function
+  fun gender(gen: String) {
+    println("GEnder: "+ gen)
+  }
+  
+  fun hobby(passion: String) {
+    println("Passion: "+ passion)
+  }
+}
+ 
+fun main(args: Array<String>) {
+    val sc = Scanner(System.`in`)
+    val student1 = Student("Ann", "May", 1969)
+    val student2 = Student("Adrian", "Statescu",2969)
+    // Call the function
+    println(student1.name)
+    student1.gender("female")
+    student1.hobby("football")
+    println(student2.name)
+    student2.gender("male")
+    student2.hobby("basketball")
+}
+```
+
 ## Examples:
 
 * https://ideone.com/N0rFMp (Calculator - euclid, sqrt, PI)
