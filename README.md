@@ -36,15 +36,6 @@ val myBoolean: Boolean = true     // Boolean
 val myText: String = "Hello"      // String
 ```
 
-## Kotlin Arrays
-
-```
-val cars = arrayOf("Volvo", "BMW", "Ford", "Mazda")
-cars[0] = "Opel"
-println(cars[0])
-// Now outputs Opel instead of Volvo
-```
-
 ## Loops Control Flow
 
 ```
@@ -102,7 +93,17 @@ while (i < 10) {
 }
 ```
 
-# Strings
+## Arrays
+
+```
+val cars = arrayOf("Volvo", "BMW", "Ford", "Mazda")
+cars[0] = "Opel"
+println(cars[0])
+// Now outputs Opel instead of Volvo
+```
+
+
+## Strings
 
 ```
 
