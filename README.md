@@ -5,6 +5,21 @@
 - Kotlin is used to develop Android apps, server side apps, and much more.
 
 ## Variables
+```
+fun main() {
+  var name = "John" // String
+  val birthyear = 1975 // Int
+  println(name)
+  println(birthyear) 
+}
+//When you create a variable with the val keyword, the value cannot be changed/reassigned.
+//When using var, you can change the value whenever you want:
+
+val firstName = "John "
+val lastName = "Doe"
+val fullName = firstName + lastName
+println(fullName)
+```
 
 ## Kotlin Data Types
 
