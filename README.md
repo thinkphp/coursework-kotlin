@@ -4,8 +4,9 @@
 - Kotlin is easy to learn, especially if you already know Java (it is 100% compatible with Java).
 - Kotlin is used to develop Android apps, server side apps, and much more.
 
+## Variables
 
-# Kotlin Data Types
+## Kotlin Data Types
 
 ```
 val myNum: Int = 5                // Int
@@ -15,7 +16,7 @@ val myBoolean: Boolean = true     // Boolean
 val myText: String = "Hello"      // String
 ```
 
-# Kotlin Arrays
+## Kotlin Arrays
 
 ```
 val cars = arrayOf("Volvo", "BMW", "Ford", "Mazda")
@@ -24,7 +25,7 @@ println(cars[0])
 // Now outputs Opel instead of Volvo
 ```
 
-# Kotlin Loops
+## Loops Control Flow
 
 ```
 val cars = arrayOf("Volvo", "BMW", "Ford", "Mazda")
@@ -38,7 +39,7 @@ for (x in cars2.reversed()) {
 }
 ```
 
-# Kotlin When
+## Kotlin When Control Flow
 
 ```
 fun main() {
@@ -58,7 +59,7 @@ fun main() {
 }
 ```
 
-# Kotlin break/continue
+# break/continue Control Flow
 
 ```
 var i = 0
@@ -163,7 +164,7 @@ fun main(args: Array<String>) {
 ```
 https://ideone.com/2Q1tQd
 
-# Kotlin Constructor class
+# Constructor class
 
 ```
 class Car(var brand: String, var model: String, var year: Int)
@@ -175,7 +176,7 @@ fun main() {
 }
 ```
 
-# Inheritance OOP
+# Inheritance
 
 ```
 // Superclass
