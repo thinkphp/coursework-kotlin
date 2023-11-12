@@ -70,7 +70,7 @@ fun main() {
 }
 ```
 
-# break/continue Control Flow
+## break/continue Control Flow
 
 ```
 var i = 0
@@ -228,5 +228,5 @@ fun main() {
 ## References:
 
 https://www.w3schools.com/KOTLIN/index.php
-https://www.programming-books.io/essential/kotlin/index.html
+https://www.programming-books.io/essential/kotlin/
   
