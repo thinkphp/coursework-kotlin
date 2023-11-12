@@ -227,6 +227,6 @@ fun main() {
 
 ## References:
 
-https://www.w3schools.com/KOTLIN/index.php
-https://www.programming-books.io/essential/kotlin/
+* https://www.w3schools.com/KOTLIN/index.php
+* https://www.programming-books.io/essential/kotlin/
   
