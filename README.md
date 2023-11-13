@@ -204,8 +204,30 @@ fun main() {
     updatePointsCredit(5)                                                               // 8 
     accountsReport()                                                                    // 9
 }
-```
 
+EZ-Pass report:
+ID 1: credit 100
+ID 2: credit 100
+ID 3: credit 100
+Updating 1...
+Updating 1...
+Error: Trying to update a non-existing account (id: 5)
+EZ-Pass report:
+ID 1: credit 130
+ID 2: credit 100
+ID 3: credit 100
+
+1. Creates a mutable Map.
+2. Creates a read-only view of the Map.
+3. Checks if the Map's key exists.
+4. Reads the corresponding value and increments it with a constant value.
+5. Iterates immutable Map and prints key/value pairs.
+6. Reads the account points balance, before updates.
+7. Updates an existing account two times.
+8. Tries to update a non-existing account: prints an error message.
+9. Reads the account points balance, after updates.
+
+```
 
 
 ## Object-Oriented Programming
