@@ -66,8 +66,21 @@ for (chars in 'a'..'x') {
 
 for (nums in 5..15) {
   println(nums)
+}
+
+val cars = arrayOf("Volvo", "BMW", "Ford", "Mazda")
+if ("Volvo" in cars) {
+  println("It exists!")
+} else {
+  println("It does not exist.")
 } 
 
+for (nums in 5..15) {
+  if (nums == 10) {
+    break
+  }
+  println(nums)
+} 
 ```
 
 ## Loops Control Flow
@@ -261,6 +274,7 @@ fun main() {
 
 ## References:
 
+* https://kotlinlang.org/docs/kotlin-tour-welcome.html
 * https://www.w3schools.com/KOTLIN/index.php
 * https://www.programming-books.io/essential/kotlin/
   
