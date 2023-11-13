@@ -36,6 +36,40 @@ val myBoolean: Boolean = true     // Boolean
 val myText: String = "Hello"      // String
 ```
 
+## If/Else Control Flow
+
+```
+val time = 22
+if (time < 10) {
+  println("Good morning.")
+} else if (time < 20) {
+  println("Good day.")
+} else {
+  println("Good evening.")
+}
+// Outputs "Good evening."
+
+
+fun main() {
+  val time = 20
+  val greeting = if (time < 18) "Good day." else "Good evening."
+  println(greeting)
+}
+```
+
+## Ranges
+
+```
+for (chars in 'a'..'x') {
+  println(chars)
+}
+
+for (nums in 5..15) {
+  println(nums)
+} 
+
+```
+
 ## Loops Control Flow
 
 ```
