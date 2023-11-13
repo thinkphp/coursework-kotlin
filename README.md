@@ -257,7 +257,6 @@ $A$B: [a1, b2, c3]
 The partition function splits the original collection into a pair of lists using a given predicate:
 1. Elements for which the predicate is true.
 2. Elements for which the predicate is false.
-3. 
 ```
 val numbers = listOf(1, -2, 3, -4, 5, -6)                 // 1
 val evenOdd = numbers.partition { it % 2 == 0 }           // 2
