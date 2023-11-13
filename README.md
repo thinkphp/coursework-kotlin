@@ -174,7 +174,9 @@ var lastName = "Doe"
 println("My name is $firstName $lastName")
 ```
 
-## Map
+## Collections - Map
+
+A map is a collection of key/value pairs, where each key is unique and is used to retrieve the corresponding value. For creating maps, there are functions mapOf() and mutableMapOf(). Using the to infix function makes initialization less noisy. A read-only view of a mutable map can be obtained by casting it to Map.
 
 ```
 const val POINTS_X_PASS: Int = 15
@@ -226,6 +228,28 @@ ID 3: credit 100
 7. Updates an existing account two times.
 8. Tries to update a non-existing account: prints an error message.
 9. Reads the account points balance, after updates.
+
+```
+
+## Collections - Zip
+
+zip function merges two given collections into a new collection. By default, the result collection contains Pairs of source collection elements with the same index. However, you can define your own structure of the result collection element.
+
+The size of the result collection equals to the minimum size of a source collection.
+
+```
+val A = listOf("a", "b", "c")                  // 1
+val B = listOf(1, 2, 3, 4)                     // 1
+
+val resultPairs = A zip B                      // 2
+val resultReduce = A.zip(B) { a, b -> "$a$b" } // 3
+
+A to B: [(a, 1), (b, 2), (c, 3)]
+$A$B: [a1, b2, c3]
+
+1. Defines two collections.
+2. Merges them into a list of pairs. The infix notation is used here.
+3. Merges them into a list of String values by the given transformation.
 
 ```
 
