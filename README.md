@@ -252,6 +252,27 @@ $A$B: [a1, b2, c3]
 
 ```
 
+## Partition
+
+The partition function splits the original collection into a pair of lists using a given predicate:
+1. Elements for which the predicate is true.
+2. Elements for which the predicate is false.
+3. 
+```
+val numbers = listOf(1, -2, 3, -4, 5, -6)                 // 1
+val evenOdd = numbers.partition { it % 2 == 0 }           // 2
+val (positives, negatives) = numbers.partition { it > 0 } // 3
+Numbers: [1, -2, 3, -4, 5, -6]
+Even numbers: [-2, -4, -6]
+Odd numbers: [1, 3, 5]
+Positive numbers: [1, 3, 5]
+Negative numbers: [-2, -4, -6]
+
+1. Defines a collection of numbers.
+2. Splits numbers into a Pair of lists with even and odd numbers.
+3. Splits numbers into two lists with positive and negative numbers. Pair destructuring is applied here to get the Pair members.
+```
+
 ## Collections - Lists
 
 A list is an ordered collection of items. In Kotlin, lists can be either mutable (MutableList) or read-only (List). For list creation, use the standard library functions listOf() for read-only lists and mutableListOf() for mutable lists. To prevent unwanted modifications, obtain read-only views of mutable lists by casting them to List.
