@@ -403,6 +403,8 @@ fun main() {
 
 ## Delegation Pattern
 
+Kotlin supports easy implementation of the delegation pattern on the native level without any boilerplate code.
+
 ```
 interface SoundBehavior {                                                          // 1
     fun makeSound()
@@ -428,6 +430,12 @@ fun main() {
     val elvisPresley = ElvisPresley("Dancin' to the Jailhouse Rock.")
     elvisPresley.makeSound()
 }
+
+1. Defines the interface SoundBehavior with one method.
+2. The classes ScreamBehavior and RockAndRollBehavior implement the interface and contain their own implementations of the method.
+3. The classes TomAraya and ElvisPresley also implement the interface, but not the method. Instead, they delegate the method calls to the responsible implementation. The delegate object is defined after the by keyword. As you see, no boilerplate code is required.
+4. When makeSound() is called on tomAraya of type TomAraya or elvisPresley of type ElvisPresley, the call is delegated to the corresponding delegate object.
+
 ```
 
 ## Examples:
