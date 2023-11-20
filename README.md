@@ -445,6 +445,7 @@ fun main() {
 * https://ideone.com/qAzN74 (Natural Logarithm)
 * https://ideone.com/u0ecO3 First Degree Equation
 * https://ideone.com/shmGW6 Quadratic Equation
+* https://ideone.com/u3F7wV Basic Calculator
 
 ## References:
 
