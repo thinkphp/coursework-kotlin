@@ -443,6 +443,8 @@ fun main() {
 * https://ideone.com/N0rFMp (Calculator - euclid, sqrt, PI)
 * https://ideone.com/cuBoe1 (Bubble Sort in Action)
 * https://ideone.com/qAzN74 (Natural Logarithm)
+* https://ideone.com/u0ecO3 First Degree Equation
+* https://ideone.com/shmGW6 Quadratic Equation
 
 ## References:
 
