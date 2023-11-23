@@ -1,26 +1,33 @@
-import kotlin.math.* // import the math library
- 
+//ecuatia de gradul 1
+//ax + b = 0
+// daca a = 0 si b = 0 atunci ecuatia are o infinitate de solutii
+// daca a = 0 si b != 0 atunci ecuatia nu are solutii
+// daca a != 0 si b != 0 atunci x = -b/a
+
 fun main() {
-var a: Double // declare a as a double variable
-var b: Double // declare b as a double variable
-var x: Double // declare x as a double variable
-println("Enter the values of a and b: ") // prompt the user to enter the values of a and b
-a = readLine()!!.toDouble() // read the value of a from the standard input and convert it to a double
-b = readLine()!!.toDouble() // read the value of b from the standard input and convert it to a double
-if (a == 0.0) // check if a is zero
-{
-if (b == 0.0) // check if b is also zero
-{
-println("The equation has infinitely many solutions.") // print a message
-}
-else // if b is not zero
-{
-println("The equation has no solution.") // print a message
-}
-}
-else // if a is not zero
-{
-x = -b / a // solve for x using the formula
-println("The solution of the equation is x = $x") // print the value of x
-}
+      var a: Double //declari o variabila de tip Double
+      var b: Double //b de tip double
+      var x: Double //c de tip double
+
+      println("Introduceti valorile pentru a si b")
+      a = readLine()!!.toDouble(); // citeste valoarea pentru variabila a si o converteste la double
+      b = readLine()!!.toDouble(); // citeste valoarea pentru variabila b si o converteste la double
+
+      if(a == 0.0) {
+          if(b == 0.0) {
+             println("Ecuatia are o infinitate de solutii!")
+          } else {
+            //adica a == 0 si b este != 0
+             println("Ecuatia nu are solutii")
+          }
+      } else {
+         //adica a != 0
+         if(b != 0.0) {
+             x = -b/a
+             println("Solutia ecuatiei este => x = $x")
+         } else {
+              println("x = 0")
+         }
+      }
+
 }
