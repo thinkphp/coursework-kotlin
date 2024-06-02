@@ -449,6 +449,7 @@ fun main() {
 
 ## Codeforces Kotlin Heroes
 
+https://codeforces.com/contest/1570
 https://codeforces.com/contest/1910
 
 ## References:
