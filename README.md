@@ -447,6 +447,10 @@ fun main() {
 * https://ideone.com/shmGW6 Quadratic Equation
 * https://ideone.com/u3F7wV Basic Calculator
 
+## Codeforces Kotlin Heroes
+
+https://codeforces.com/contest/1910
+
 ## References:
 
 * https://kotlinlang.org/docs/kotlin-tour-welcome.html
