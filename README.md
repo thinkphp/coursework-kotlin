@@ -1,3 +1,176 @@
+# Introduction to Kotlin Programming
+## Stanford University Coursework
+
+### Lesson 1: Kotlin Basics and Variables
+
+#### 1.1 Hello, World!
+Let's start with the traditional "Hello, World!" program:
+
+```kotlin
+fun main() {
+    println("Hello, World!")
+}
+```
+
+This simple program introduces the `main()` function, which is the entry point of every Kotlin program, and the `println()` function for output.
+
+#### 1.2 Variables and Data Types
+Kotlin uses type inference but also allows explicit type declarations:
+
+```kotlin
+val name: String = "Alice"  // Immutable (read-only) variable
+var age = 30  // Mutable variable, type inferred as Int
+const val PI = 3.14159  // Compile-time constant
+
+println("$name is $age years old")
+```
+
+Key concepts:
+- `val`: Read-only variable (immutable)
+- `var`: Mutable variable
+- `const val`: Compile-time constant
+- String templates: `$variableName` or `${expression}`
+
+### Lesson 2: Control Flow
+
+#### 2.1 Conditional Statements
+Kotlin provides standard if-else statements and a powerful when expression:
+
+```kotlin
+val grade = 85
+
+if (grade >= 90) {
+    println("A")
+} else if (grade >= 80) {
+    println("B")
+} else {
+    println("C or below")
+}
+
+when (grade) {
+    in 90..100 -> println("Excellent")
+    in 80..89 -> println("Good")
+    in 70..79 -> println("Average")
+    else -> println("Needs Improvement")
+}
+```
+
+#### 2.2 Loops
+Kotlin offers for and while loops, with some enhancements:
+
+```kotlin
+// For loop
+for (i in 1..5) {
+    print("$i ")
+}
+println()
+
+// While loop
+var counter = 0
+while (counter < 5) {
+    print("${counter++} ")
+}
+println()
+
+// For loop with step and downTo
+for (i in 10 downTo 0 step 2) {
+    print("$i ")
+}
+println()
+```
+
+### Lesson 3: Functions
+
+#### 3.1 Function Basics
+Functions in Kotlin are declared using the `fun` keyword:
+
+```kotlin
+fun greet(name: String): String {
+    return "Hello, $name!"
+}
+
+println(greet("Stanford"))
+
+// Single-expression function
+fun square(x: Int) = x * x
+
+println("Square of 5 is ${square(5)}")
+```
+
+#### 3.2 Default and Named Arguments
+Kotlin supports default and named arguments:
+
+```kotlin
+fun createUser(name: String, age: Int = 18, isStudent: Boolean = true) {
+    println("User: $name, Age: $age, Student: $isStudent")
+}
+
+createUser("Bob")
+createUser("Alice", 22)
+createUser("Charlie", isStudent = false)
+```
+
+### Lesson 4: Collections
+
+#### 4.1 Lists
+Kotlin provides immutable (List) and mutable (MutableList) lists:
+
+```kotlin
+val readOnlyList = listOf(1, 2, 3, 4, 5)
+val mutableList = mutableListOf(1, 2, 3)
+
+println(readOnlyList)
+mutableList.add(4)
+println(mutableList)
+```
+
+#### 4.2 Maps
+Similarly, Kotlin has immutable and mutable maps:
+
+```kotlin
+val readOnlyMap = mapOf("a" to 1, "b" to 2, "c" to 3)
+val mutableMap = mutableMapOf("x" to 10, "y" to 20)
+
+println(readOnlyMap)
+mutableMap["z"] = 30
+println(mutableMap)
+```
+
+### Lesson 5: Object-Oriented Programming
+
+#### 5.1 Classes and Objects
+Kotlin makes creating classes and objects straightforward:
+
+```kotlin
+class Person(val name: String, var age: Int) {
+    fun introduce() = "Hi, I'm $name and I'm $age years old"
+}
+
+val alice = Person("Alice", 30)
+println(alice.introduce())
+```
+
+#### 5.2 Inheritance
+Kotlin classes are final by default. Use `open` to allow inheritance:
+
+```kotlin
+open class Animal(val name: String) {
+    open fun makeSound() = "The animal makes a sound"
+}
+
+class Dog(name: String) : Animal(name) {
+    override fun makeSound() = "The dog barks"
+}
+
+val animal = Animal("Generic Animal")
+val dog = Dog("Buddy")
+
+println(animal.makeSound())
+println(dog.makeSound())
+```
+
+This coursework provides a foundation in Kotlin programming, covering key concepts with practical examples. Students should practice these concepts and explore Kotlin's extensive standard library for more advanced features.
+
 # Essential Kotlin language
 
 ```
